@@ -2,12 +2,12 @@
 
 **Lab. Report \#1 – Introduction to Testing and Defect Tracking**
 
-| Group: Group Number      |
-|-----------------|
-| Student 1 name                |   
-| Student 2 name              |   
-| Student 3 name               |   
-| Student 4 name                |   
+| Group: 9          |
+|-------------------|
+| Maheen Raza       |   
+| Mehrnaz Zafari    |   
+| Chloe Villaranda  |   
+| Maham Jamal       |   
 
 
 **Table of Contents**
@@ -33,8 +33,11 @@ learned	1](#_Toc439194682)
 
 # Introduction
 
-An introduction of your lab work, and what you knew about exploratory and manual
-functional testing before this lab
+An introduction of your lab work, and what you knew about exploratory and manual functional testing before this lab:
+
+By participating in lab 1 for SENG 438 - Introduction to Testing and Defect Tracking - our group dove head first into what it's like to test software for bugs, especially without any special guidance. From other classes, most of us had the experience of writing coded unit tests themselves to test specific functionalites within code. By conuducting these tests, we've learned different methods to track bugs, and observe if they have been resolved.
+
+Prior to this lab, the majority of us had no idea what 'exploratory' testing was. Before approaching the software, we were confused, wondering if we were doing it correctly. Realizing that the main idea of 'exploratory' testing is to create and execute tests as we go, we got more comfortable doing so.
 
 # High-level description of the exploratory testing plan
 
