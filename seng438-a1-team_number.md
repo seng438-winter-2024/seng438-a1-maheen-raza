@@ -35,7 +35,7 @@ learned	1](#_Toc439194682)
 
 An introduction of your lab work, and what you knew about exploratory and manual functional testing before this lab:
 
-By participating in lab 1 for SENG 438 - Introduction to Testing and Defect Tracking - our group dove head first into what it's like to test software for bugs, especially without any special guidance. From other classes, most of us had the experience of writing coded unit tests themselves to test specific functionalites within code. By conuducting these tests, we've learned different methods to track bugs, and observe if they have been resolved.
+By participating in lab 1 for SENG 438 - Introduction to Testing and Defect Tracking - our group dove head first into what it's like to test software for bugs, especially without any special guidance. From other classes, most of us had the experience of writing coded unit tests themselves to test specific functionalities within code. By conducting these tests, we've learned different methods to track bugs and observe if they have been resolved.
 
 Prior to this lab, the majority of us had no idea what 'exploratory' testing was. Before approaching the software, we were confused, wondering if we were doing it correctly. Realizing that the main idea of 'exploratory' testing is to create and execute tests as we go, we got more comfortable doing so.
 
@@ -76,9 +76,15 @@ Text…
 
 Text…
 
-# How the pair testing was managed and team work/effort was divided 
+# How the pair testing was managed and teamwork/effort was divided 
 
-Text…
+For exploratory testing, our group broke into pairs. The tester was responsible for guiding the testing and the other partner took on the role of a recorder, they noted down each action taken by the tester at every point. When a bug was found, both the tester and recorder worked together to note the bug down using AzureDevOps.
+
+For manual testing, the group worked together. One person used the program, one organized the order to perform tests, one recorded any bugs found in AzureDevOps and the last member double-checked all bugs to ensure no duplicates were seen.
+
+For regression testing, we split the 40 manual tests as well as the number of bugs found in version 1.0 amongst ourselves (15 tests/member) and recorded any new defects.
+
+Overall, we agreed the work load and effort were split evenly.
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
