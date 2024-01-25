@@ -41,7 +41,29 @@ Prior to this lab, the majority of us had no idea what 'exploratory' testing was
 
 # High-level description of the exploratory testing plan
 
-Text…
+For our exploratory testing, the test charter we agreed on was to 'determine if the program meets all specified requirements.' We aimed to target all functions by using team exploratory testing and employed the "tour bus" principle, a term coined by Cem Kaner. This principle outlines that a general plan is drawn up and the tester tries out more things when undesired behavior is seen. We planned to test all functions briefly and delve deeper when any bugs were noticed by trying to recreate the bug with a different order of steps. We decided to test the most common paths as well as exceptional paths. Below you can see our test coverage outline:
+
+Customer interaction 
+
+- Wrong card number
+- Pin validation 
+- Bank inquiries 
+- 3 invalid pins 
+
+Transaction services
+
+- Cash withdrawals (from chequing and savings) 
+- Cash deposits 
+- Cash transfers
+
+Error Handling
+
+- Canceling a transaction mid-way
+- Withdrawing an amount larger than available 
+- Withdrawing from an empty account
+
+The outline specifies 3 broad categories we wanted to cover and specific use cases within each.
+
 
 # Comparison of exploratory and manual functional testing
 
