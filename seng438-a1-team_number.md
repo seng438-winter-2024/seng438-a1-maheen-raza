@@ -77,7 +77,7 @@ Exploratory testing proved to be far more efficient than manual functional testi
 
 # Notes and discussion of the peer reviews of defect reports
 
-Text…
+After each pair completed the exploratory testing phase, a handful of bugs were found in the software through test cases that also incidentally matched the test cases in the given SUT in the manual scripted testing phase. This demonstrates the excellent ability that our group performed when running exploratory tests, as we managed to find the important bugs that a user of the ATM system might stumble across. After reviewing the defect reports in Azure, all the recorded bugs made sense, and were present in the subsequent versions if marked active. Each bug met the requirements of the software described in the lab guidelines.
 
 # How the pair testing was managed and teamwork/effort was divided 
 
@@ -85,7 +85,7 @@ For exploratory testing, our group broke into pairs. The tester was responsible 
 
 For manual testing, the group worked together. One person used the program, one organized the order to perform tests, one recorded any bugs found in AzureDevOps and the last member double-checked all bugs to ensure no duplicates were seen.
 
-For regression testing, we split the 40 manual tests as well as the number of bugs found in version 1.0 amongst ourselves (15 tests/member) and recorded any new defects.
+For regression testing, we split the 40 manual tests as well as the number of bugs found in version 1.0 amongst ourselves (10 tests/member) and recorded any new defects.
 
 Overall, we agreed the workload and effort were split evenly.
 
