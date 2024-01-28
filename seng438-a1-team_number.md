@@ -95,4 +95,4 @@ As this was our first time completing "exploratory testing", we would struggle t
 
 # Comments/feedback on the lab and lab document itself
 
-Text…
+Overall, the lab was a great way to get hands-on experience when it comes to testing, as it really soldified the ideas and differences between exploratory and manual scripted testing. The lab document was comprehensive in providing relevant information in order to complete the lab. It would have been nice that since the concepts were new to us, to have additional sources to be able to look to during the times that we might have been stuck.
