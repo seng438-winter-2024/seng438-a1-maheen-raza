@@ -1,0 +1,330 @@
+﻿Work Item Type,ID,Title,Assigned To,State,Area Path,Tags,Comment Count,,Description
+Bug,1,Not identifying invalid card number - Version 1.0,,New,seng438-assign1,resolved,1,,"function being tested: inserting card number
+
+initial state of the system: (e.g. the system is on and idle): on and idle
+
+steps to reproduce: 
+Turned machine on 
+Insert card, enter 3 as card number
+Entered PIN
+
+
+expected outcome: Should give us an error screen since 3 is not a valid card number before asking for PIN.
+
+actual outcome: A asks for PIN, and after PIN is entered, blank screen appears with no output.
+"
+Bug,2,Card still available after being retained by bank - Version 1.0,,New,seng438-assign1,,1,,"function being tested: card retainment 
+
+initial state: on & idle 
+
+steps to reproduce 
+Insert card, enter 1 as card number.
+Trying invalid pin 98: error message given 
+Trying invalid pin 98: error message given.
+Trying invalid pin 98: error message given 
+Tried inserting the same card again 
+
+
+Expected outcome: Should show an error message to notify user that card has been retained
+
+
+
+Actual outcome: prompts user for pin
+
+
+
+"
+Bug,3,Typo in prompt after bank inquiry is made - Version 1.0,,Resolved,seng438-assign1,resolved,0,,"function being tested: bank inquiry for checking account 
+
+intial state of the system: on & idle
+
+steps to reproduce: 
+
+Select card number 1
+Enter correct pin
+Select 4 (bank inquiry)
+Select 1 (checking)
+Expected outcome: correct spelling of prompt ""would""
+
+Actual outcome: incorrect spelling of prompt ""wood""
+
+
+"
+Bug,4,Card 2 information given in bank inquiry for money market for card 1 - Version 1.0,,Resolved,seng438-assign1,resolved,0,,"function being tested: bank inquiry for money market 
+
+
+intial state of the system: on & idle
+
+
+steps to reproduce: 
+
+
+Select card 1 
+Enter correct pin 
+Select 4 bank inquiry 
+Select 2 money market 
+Expected outcome: Should not work for money market, specifically for card 1.
+
+
+Actual outcome: Shows ""unknown error"" screen and inquiry includes information about card 2 
+
+"
+Bug,5,Withdrawal error - Version 1.0,,Resolved,seng438-assign1,MFT; resolved,0,,"function being tested: withdrawal transaction
+
+
+
+intial state of the system: on & idle
+
+
+steps to reproduce: 
+
+Select card 1 
+Enter correct pin 
+Select 4 bank inquiry 
+Select 2 money market 
+Select 1 for another transaction 
+Select 1 for withdrawal 
+Select 1 for checking 
+Select 1 for withdrawing $20
+
+Expected outcome: $20 withdrawn from checking account and $80 left in account
+
+
+Actual outcome: Error messsage shown to user, insufficent funds available
+
+"
+Bug,6,Incorrect amount withdrawn from checking account - Version 1.0,,Resolved,seng438-assign1,resolved,0,,"function being tested: withdrawal transaction
+
+
+
+intial state of the system: on & idle
+
+
+steps to reproduce: 
+
+Select card 1 
+Enter correct pin 
+Select 1 for withdrawal 
+Select 1 for checking 
+Select 1 for withdrawing $20
+
+Expected outcome: $20 withdrawn from checking account and $80 left in account
+
+
+Actual outcome: $40 withdrawn from checking account and $60 left in account"
+Bug,7,Incorrect bank balance after deposit is made - Version 1.0,,Resolved,seng438-assign1,resolved,0,,"function being tested: desposit transaction
+
+
+
+intial state of the system: on & idle
+
+
+steps to reproduce: 
+
+Select card 1 
+Enter correct pin 
+Select 1 for withdrawal
+Select 1 for checking
+Select 1 for withdrawing $20
+Select 1 for another transaction 
+Select 2 for deposit
+Select 1 for checking
+Enter 40 for amount to deposit 
+Click to insert envelope
+
+Expected outcome: Total and available balance is equal, should be $100
+
+Actual outcome: Total balance = 90,  Available balance = 60"
+Bug,8,Incorrect value transferred from checking to saving - Version 1.0,,Resolved,seng438-assign1,resolved,0,,"
+function being tested: Withdrawal
+
+initial state of the system: (e.g. the system is on and idle): on and idle
+
+steps to reproduce: 
+
+
+Select 1 for another transaction 
+Select 3 for transfer 
+Select 1 for transfer from checking 
+Select 2 for transfer TO savings
+Enter $20 to transfer
+
+Expected outcome: Amount transferred = 20, total balance, available balance = $1020
+
+Actual outcome: Amount transferred = 19.50, total balance, available balance = $1019.50 
+
+If there is a transfer fee, the user should be notified. no fee is specified in the high-level overview of the program "
+Bug,9,Incorrect amount withdrawn when withdrawing an amount larger than available - Version 1.0,,Resolved,seng438-assign1,resolved,1,,"
+
+function being tested: withdrawall
+
+initial state of the system: (e.g. the system is on and idle): on and idle
+
+Turn on machine 
+5 $20
+Insert Card 
+Enter card number 1
+Enter correct pin 42
+Select 1 for withdrawal 
+Select 1 for checking
+Press 1 for 20 and then immediately cancel 
+Last transaction cancelled notification given 
+Select 1 for new transaction 
+Select 1 for withdrawal 
+Select 1 for checking 
+Select 5 for $200 to withdraw
+
+Expected outcome: Error message shown indicating there are insufficent funds
+
+Actual Outcome: $20 withdrawn with $80 available 
+
+May be a decimal place error "
+Bug,11,Incorrect available funds display on the receipt after withdrawal - Version 1.0,,Resolved,seng438-assign1,resolved,1,,"function being tested: withdrawal Inquiry
+
+initial state of the system: (e.g. the system is on and idle): on and idle
+
+steps to reproduce: 
+
+Turn on Machine
+Insert Card
+Card 2
+Enter Pin 1234
+Press 1 for transaction type (withdrawal)
+Press 1 for checking
+Press option 3 ($60)
+
+expected outcome: Should display $40 (since initial balance was $100)
+
+actual outcome: Program displays 
+AMOUNT: $100.00
+TOTAL BAL: $0.00
+AVAILABLE: $0.00
+"
+Bug,12,Unknown Error in Checking Money Market Balance Inquiry - Version 1.0,,Resolved,seng438-assign1,resolved,1,,"function being tested: Balance Inquiry
+initial state of the system: (e.g. the system is on and idle): on and idle
+
+steps to reproduce: 
+
+Turn on Machine
+Insert Card
+Card 1
+Enter Pin 42
+Press 4 for transaction type
+Account Inquiry from Money Market
+expected outcome: Should display $5000
+
+actual outcome: Program displays ""Unknown Error"", $500 enlarges, and proceeds to go into the new transaction screen
+"
+Bug,13,Incorrect withdrawal from Money Market - Version 1.0,,Resolved,seng438-assign1,,0,,"function being tested: Withdrawal
+
+initial state of the system: (e.g. the system is on and idle): on and idle
+
+steps to reproduce: 
+
+Turn on Machine
+Insert Card
+Card 2
+Enter Pin 1234
+Press 1 for transaction type
+Press 3 to withdraw from Money Market
+Press 5 to withdraw $200
+
+expected outcome: Should display a withdrawal amount of $200 and the available balance should go to $4800
+
+actual outcome: The program says it will withdraw only $20 from the account but only goes from $5000 to $4960"
+Bug,14,Insufficient available balance after 2nd withdrawal - Version 1.0,,Resolved,seng438-assign1,resolved,0,,"function being tested: withdrawal Inquiry
+
+initial state of the system: (e.g. the system is on and idle): on and idle
+
+steps to reproduce: 
+
+Turn on Machine
+Insert Card
+Card 2
+Enter Pin 1234
+Press 1 for transaction type (withdrawal)
+Press 1 for checking 
+Press option 3 ($60)
+Select ""Yes"" for ""Would you like to do another transaction?""
+Press 1 for transaction type (withdrawal)
+Press 1 for checking 
+Press option 2 ($40)
+
+expected outcome: The remaining balance should be $0, since initial balance was $40
+
+actual outcome: Program displays 
+Insufficient available balance 
+"
+Bug,15,MFT: Error in receipt when depositing an amount - Version 1.0,,New,seng438-assign1,MFT,0,,"function being tested: system performs a legitimate deposit transaction
+
+initial state of system: system is requesting that customer insert an envelope 
+
+steps to reproduce:
+Select a valid amount to deposit into checking and insert an envelope.
+
+
+expected output: System accepts envelope; System prints a correct receipt showing amount and correct updated balance; System records transaction correctly in the log (showing message to the bank, approval back, and acceptance of the envelope)
+
+actual output: incorrect receipt printed"
+Bug,16,MFT: System does not perform a legitimate inquiry transaction properly - Version 1.0,,New,seng438-assign1,,0,,"function being tested: inquiry 
+
+steps to reproduce:
+Request a bank inquiry from the checking account using card 1. 
+
+
+expected output: System prints a correct receipt showing correct balance; System records transaction correctly in the log (showing both message to the bank and approval back)
+
+
+actual output: total and available balances are different "
+Bug,17,"Incorrect account types in Balance inquiry, version 1.0",,Resolved,seng438-assign1,,0,,"function being tested: Balance Inquiry
+
+initial state of the system: (e.g. the system is on and idle): on and idle
+
+steps to reproduce: 
+
+Turn on Machine
+Insert Card
+Card 1
+Enter Pin 42
+Press 4 for balance inquiry (balance)
+
+expected outcome:  The available options should be (based on instructions:"" Available Accounts: Checking and Savings"")
+Checking 
+Saving 
+
+actual outcome: Program displays 
+Checking 
+Money Market 
+"
+Bug,18,MFT: Correct re-entry of pin is not accepted - Version 1.0,,New,seng438-assign1,,0,,"Function being tested: invalid pin extension 
+
+ Initial state of system: Request to re-enter PIN is being displayed
+
+Steps to Reproduce:
+Select card 1, enter incorrect pin and then enter correct pin when prompted again.
+
+Expected output: Original transaction completes successfully
+
+Actual output: re-entry of the PIN is again requested
+"
+Bug,19,MFT: Correct re-entry of pin on the second try is not accepted - Version 1.0,,New,seng438-assign1,,0,,"Function being tested: invalid pin extension
+
+Initial State of System: Request to re-enter PIN is being displayed
+
+Steps to Reproduce:
+Select card 1, enter incorrect pin and then enter correct pin 
+
+Expected Output: Enter incorrect PIN the first time, then correct PIN the second time
+
+Actual Output: Requests re-entry of pin"
+Bug,20,Correct re-entry of PIN on the third try is not accepted - Version 1.0,,New,seng438-assign1,,0,,"function being tested: invalid PIN extension 
+
+initial state of system: Request to re-enter PIN is being displayed
+
+steps to reproduce:
+Enter incorrect PIN the first time and second times, then correct PIN the third time
+
+
+expected output: Original transaction completes successfully
+
+actual output: Request to re-enter PIN is displayed again."
